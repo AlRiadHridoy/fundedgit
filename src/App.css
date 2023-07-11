@@ -1,0 +1,301 @@
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6b3fcbd;
+  border-radius: 2px;
+}
+
+/* section {
+  padding-top: 5rem;
+} */
+body {
+  background-color: #090913;
+  color: #dddddd;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+p,
+span {
+  font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: -0.8;
+  font-size: 100 !important;
+}
+
+a {
+  line-height: -0.8;
+  padding-top: 0.05rem;
+}
+
+.container {
+  margin: auto;
+  max-width: 72rem !important;
+  padding: 0 1.5rem;
+}
+
+.map-img {
+  background-image: url("./assets/images/map.png");
+}
+
+.prices span {
+  font-size: 0.9rem;
+  font-family: "Code Pro regular", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.faq-collaps span {
+  font-family: "Code Pro bold", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+/* evaluation */
+.shadow {
+  box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 2px 45px 4px rgba(0, 0, 0, 0.65);
+}
+
+.footer-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(42, 27, 43, 1) 100%
+  );
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+.recharts-legend-item {
+  opacity: 0;
+}
+
+line {
+  @apply stroke-none;
+}
+
+line:nth-child(1) {
+  @apply stroke-primary/20;
+}
+
+.recharts-cartesian-axis-tick {
+  @apply text-[0.7rem];
+}
+.recharts-wrapper {
+  position: relative;
+}
+.recharts-wrapper::before {
+  position: absolute;
+  left: -0.5rem;
+  top: 45%;
+
+  content: "Balance";
+  color: #ffffff79;
+  font-size: 0.7rem;
+  transform: rotate(-90deg);
+}
+.recharts-wrapper::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0.25rem;
+  transform: translateX(-50%);
+  content: "Trading Period";
+  color: #ffedfd79;
+  font-size: 0.7rem;
+}
+@media screen and (min-width: 600px) {
+  .recharts-cartesian-axis-tick {
+    @apply text-[0.9rem];
+  }
+
+  .recharts-wrapper::before {
+    left: -1%;
+    top: 45%;
+    font-size: 0.85rem;
+  }
+  .recharts-wrapper::after {
+    left: 50%;
+    bottom: 0.5rem;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+  }
+}
+
+/* Swipe caroulsel */
+.evaluation-slider .swiper-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.swiper-pagination {
+  position: fixed;
+  bottom: -2.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background-color: #c381fc;
+}
+
+.evaluation-slider .swiper-slide {
+  max-width: 18rem;
+}
+
+.swiper,
+swiper-container {
+  overflow: visible;
+}
+
+.benefits-slider .swiper-slide,
+.salary-slider .swiper-slide {
+  width: 100%;
+  align-self: stretch;
+}
+
+/* Contact */
+@media (min-width: 768px) {
+  .faq .option::before {
+    content: url("./assets/images/arrow.svg");
+    position: absolute;
+    right: -2.5rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+  }
+}
+
+.cookie p,
+.cookie span,
+.cookie li,
+.term p,
+.term span,
+.cookie li,
+.privacy p,
+.privacy span,
+.privacy li {
+  font-family: "Montserrat", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.cookie p div {
+  @apply font-bold;
+}
+.privacy p div {
+  @apply font-bold;
+}
+
+.copied::before {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+select {
+  appearance: none;
+  color: rgb(242, 238, 255);
+}
+
+option {
+  color: rgb(242, 238, 255);
+  white-space: wrap;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* Text white */
+.text-wht-gradient {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 25%,
+    rgb(150, 150, 150) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.terms-condition,
+.privacy,
+.cookie {
+  @apply text-white;
+}
+
+.compare span {
+  @apply text-[0.9rem] font-bold font-Montserrat;
+}
+.compare .buttons  {
+  @apply font-Montserrat;
+}
+
+/* login scroll */
+.login ::-webkit-scrollbar {
+  width: 0;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.ticker-widget svg {
+  display: none;
+}
+
+/* Register Modal */
+select option {
+  margin: 40px;
+  background: #090913;
+  color: #f5f1ff;
+  text-shadow: 0 1px 0 #090913;
+  font-family: "Code Pro regular", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
